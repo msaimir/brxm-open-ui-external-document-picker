@@ -3,6 +3,7 @@
 <#-- @ftlvariable name="document" type="org.example.beans.Banner" -->
 <#if document??>
 <div>
+  ${document.class.name}
   <#if document.class.name == 'org.example.beans.Banner'>
   <a href="<@hst.link hippobean=document.link />">
     <figure style="position: relative">

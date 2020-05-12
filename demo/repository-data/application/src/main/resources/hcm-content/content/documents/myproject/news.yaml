@@ -208,7 +208,7 @@
           hippostd:state: draft
           hippostdpubwf:createdBy: admin
           hippostdpubwf:creationDate: 2013-11-12T13:03:00+01:00
-          hippostdpubwf:lastModificationDate: 2019-09-02T15:38:00.820+02:00
+          hippostdpubwf:lastModificationDate: 2020-05-08T10:57:41.108+02:00
           hippostdpubwf:lastModifiedBy: admin
           hippotranslation:id: c2d0ab21-eb16-4997-8e04-d89661b7f133
           hippotranslation:locale: en
@@ -495,11 +495,10 @@
           jcr:mixinTypes: ['mix:referenceable']
           jcr:uuid: a250bfc8-2e30-44aa-9710-9cc23d446d06
           hippo:availability: []
-          hippostd:holder: admin
           hippostd:state: draft
           hippostdpubwf:createdBy: admin
           hippostdpubwf:creationDate: 2013-11-12T14:31:00+01:00
-          hippostdpubwf:lastModificationDate: 2020-02-27T13:47:11.344+01:00
+          hippostdpubwf:lastModificationDate: 2020-04-24T12:54:47.698+02:00
           hippostdpubwf:lastModifiedBy: admin
           hippotranslation:id: c0fd97b5-20e1-4ab9-8865-e7e65293f188
           hippotranslation:locale: en
@@ -629,14 +628,15 @@
               clear glass decor","urls":{"raw":"https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjgwNjg5fQ","full":"https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjgwNjg5fQ","regular":"https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","small":"https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","thumb":"https://images.unsplash.com/photo-1567607703202-0bf728b59e09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ"},"links":{"self":"https://api.unsplash.com/photos/1WKZQb6bB-4","html":"https://unsplash.com/photos/1WKZQb6bB-4","download":"https://unsplash.com/photos/1WKZQb6bB-4/download","download_location":"https://api.unsplash.com/photos/1WKZQb6bB-4/download"},"tags":[{"title":"sphere"},{"title":"crystal"},{"title":"accessory"}]}}]'
       /the-gastropoda-news:
         jcr:primaryType: hippo:handle
-        jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+        jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
         jcr:uuid: aeda2bcd-b21d-4ead-a2e6-c64a2ca051c8
         hippo:name: The gastropoda news
-        /the-gastropoda-news:
+        hippo:versionHistory: 3145d8b3-150e-4c7f-8ef7-c1b30744d365
+        /the-gastropoda-news[1]:
           jcr:primaryType: myproject:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
           jcr:uuid: 0e7196cd-fc5b-494a-8c21-0d50ae8ce760
-          hippo:availability: [live, preview]
+          hippo:availability: [live]
           hippostd:holder: admin
           hippostd:state: published
           hippostdpubwf:createdBy: admin
@@ -694,3 +694,139 @@
             hippo:facets: []
             hippo:modes: []
             hippo:values: []
+        /the-gastropoda-news[2]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+          jcr:uuid: 93662f6a-c5b0-4846-ab80-eb2c889e887e
+          hippo:availability: [preview]
+          hippostd:state: unpublished
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-04-24T12:56:01.407+02:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 1d15024f-3035-43ca-aaf9-db5ccd2aa407
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2019-07-03T17:38:00+02:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Liverpool
+          myproject:source: ''
+          myproject:title: The gastropoda news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        </body>
+                        </html>
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:unsplashed:
+            jcr:primaryType: unsplashedpicker:unsplashed
+            unsplashedpicker:images: ['https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjgwNjg5fQ']
+            unsplashedpicker:unsplashedimgs: '[{"id":"hOErTDQmO4w","title":null,"image":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","description":"That
+              was an irresistible view. Beautiful big mammals in such a harmony (or
+              rather a hierarchy). Shot in Wrocław Zoo.","data":{"id":"hOErTDQmO4w","created_at":"2018-06-09T19:59:27-04:00","updated_at":"2020-04-21T01:20:41-04:00","width":5184,"height":3456,"color":"#0F0806","description":"That
+              was an irresistible view. Beautiful big mammals in such a harmony (or
+              rather a hierarchy). Shot in Wrocław Zoo.","alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjgwNjg5fQ","full":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjgwNjg5fQ","regular":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","small":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","thumb":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ"},"links":{"self":"https://api.unsplash.com/photos/hOErTDQmO4w","html":"https://unsplash.com/photos/hOErTDQmO4w","download":"https://unsplash.com/photos/hOErTDQmO4w/download","download_location":"https://api.unsplash.com/photos/hOErTDQmO4w/download"},"tags":[{"title":"hippo"},{"title":"animal"},{"title":"mammal"}]}}]'
+        /the-gastropoda-news[3]:
+          jcr:primaryType: myproject:newsdocument
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: ca76886f-11f7-4350-ab05-b11ae208cb90
+          hippo:availability: []
+          hippostd:state: draft
+          hippostdpubwf:createdBy: admin
+          hippostdpubwf:creationDate: 2013-11-12T12:50:00+01:00
+          hippostdpubwf:lastModificationDate: 2020-04-24T12:55:48.200+02:00
+          hippostdpubwf:lastModifiedBy: admin
+          hippotranslation:id: 1d15024f-3035-43ca-aaf9-db5ccd2aa407
+          hippotranslation:locale: en
+          myproject:author: Alfred Anonymous
+          myproject:date: 2019-07-03T17:38:00+02:00
+          myproject:documenttype: news
+          myproject:introduction: Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum
+          myproject:location: Liverpool
+          myproject:source: ''
+          myproject:title: The gastropoda news
+          /myproject:content:
+            jcr:primaryType: hippostd:html
+            hippostd:content: |-
+              <html>
+                        <body>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+
+                        </body>
+                        </html>
+          /myproject:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: 3c740fcf-8ec5-4f00-a713-ff96caa645c8
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /myproject:unsplashed:
+            jcr:primaryType: unsplashedpicker:unsplashed
+            unsplashedpicker:images: ['https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjgwNjg5fQ']
+            unsplashedpicker:unsplashedimgs: '[{"id":"hOErTDQmO4w","title":null,"image":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","description":"That
+              was an irresistible view. Beautiful big mammals in such a harmony (or
+              rather a hierarchy). Shot in Wrocław Zoo.","data":{"id":"hOErTDQmO4w","created_at":"2018-06-09T19:59:27-04:00","updated_at":"2020-04-21T01:20:41-04:00","width":5184,"height":3456,"color":"#0F0806","description":"That
+              was an irresistible view. Beautiful big mammals in such a harmony (or
+              rather a hierarchy). Shot in Wrocław Zoo.","alt_description":null,"urls":{"raw":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjgwNjg5fQ","full":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjgwNjg5fQ","regular":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","small":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ","thumb":"https://images.unsplash.com/photo-1528588461395-c38be5b29370?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjgwNjg5fQ"},"links":{"self":"https://api.unsplash.com/photos/hOErTDQmO4w","html":"https://unsplash.com/photos/hOErTDQmO4w","download":"https://unsplash.com/photos/hOErTDQmO4w/download","download_location":"https://api.unsplash.com/photos/hOErTDQmO4w/download"},"tags":[{"title":"hippo"},{"title":"animal"},{"title":"mammal"}]}}]'

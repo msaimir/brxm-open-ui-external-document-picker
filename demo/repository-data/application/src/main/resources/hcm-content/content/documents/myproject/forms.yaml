@@ -1,0 +1,67 @@
+/content/documents/myproject/forms:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: ee5ece93-5d01-4be1-82a7-8a444e50f087
+  hippo:name: Forms
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 9bdddd27-f12b-42eb-8022-4098abbfc292
+  hippotranslation:locale: en
+  /simple-form:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: caaf2a1a-1e8d-4c7a-b67a-fd7ee524a08d
+    hippo:name: Simple form
+    hippo:versionHistory: 828d5558-d6c0-4793-b111-9dbb66fb62a1
+    /simple-form[1]:
+      jcr:primaryType: myproject:formdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 9d212ccd-eb45-4467-b343-88489d694394
+      hippo:availability: []
+      hippostd:holder: admin
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-05-08T11:49:59.260+02:00
+      hippostdpubwf:lastModificationDate: 2020-05-12T16:06:00.979+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 8018429e-8596-4bf3-bea7-1fc98b44ca7c
+      hippotranslation:locale: en
+      myproject:title: Simple form
+      /myproject:formio:
+        jcr:primaryType: formiopicker:formio
+        formiopicker:formiopaths: '[{"id":"test","title":"Test","data":{"type":"form","title":"Test","name":"test","path":"test","_id":"5e9037ed21e3a306cc2dc474"},"description":"Test","image":null}]'
+        formiopicker:path: test
+    /simple-form[2]:
+      jcr:primaryType: myproject:formdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 014ac286-8096-468f-9b23-8ee9a738b8f8
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-05-08T11:49:59.260+02:00
+      hippostdpubwf:lastModificationDate: 2020-05-12T12:56:49.507+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 8018429e-8596-4bf3-bea7-1fc98b44ca7c
+      hippotranslation:locale: en
+      myproject:title: Simple form
+      /myproject:formio:
+        jcr:primaryType: formiopicker:formio
+        formiopicker:formiopaths: '[{"id":"test","title":"Test","data":{"type":"form","title":"Test","name":"test","path":"test","_id":"5e9037ed21e3a306cc2dc474"},"description":"Test","image":null}]'
+        formiopicker:path: test
+    /simple-form[3]:
+      jcr:primaryType: myproject:formdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: c3106d25-3290-48cf-8478-4d3c9ade4acc
+      hippo:availability: [live]
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2020-05-08T11:49:59.260+02:00
+      hippostdpubwf:lastModificationDate: 2020-05-12T12:56:49.507+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2020-05-12T12:56:51.010+02:00
+      hippotranslation:id: 8018429e-8596-4bf3-bea7-1fc98b44ca7c
+      hippotranslation:locale: en
+      myproject:title: Simple form
+      /myproject:formio:
+        jcr:primaryType: formiopicker:formio
+        formiopicker:formiopaths: '[{"id":"test","title":"Test","data":{"type":"form","title":"Test","name":"test","path":"test","_id":"5e9037ed21e3a306cc2dc474"},"description":"Test","image":null}]'
+        formiopicker:path: test

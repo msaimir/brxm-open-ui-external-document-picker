@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:modules/crispregistry/hippo:moduleconfig/crisp:resourceresolvercontainer/formio:
+      crisp:propvalues: ['true', 'http://localhost:3001/']

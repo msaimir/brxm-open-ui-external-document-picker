@@ -5,7 +5,6 @@ import org.hippoecm.hst.content.beans.Node;
 import java.util.Calendar;
 import org.hippoecm.hst.content.beans.standard.HippoHtml;
 import org.hippoecm.hst.content.beans.standard.HippoGalleryImageSet;
-
 import com.bloomreach.site.openui.rest.unsplashed.beans.Unsplashed;
 
 /** 

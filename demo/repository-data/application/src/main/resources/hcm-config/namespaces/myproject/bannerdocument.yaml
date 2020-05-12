@@ -11,7 +11,7 @@ definitions:
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: 91d45e8a-00ce-4f1f-96b6-d82ceb3aacdd
+          jcr:uuid: 592f434a-eb3e-40aa-97c9-29fd1121cc70
           hipposysedit:node: true
           hipposysedit:supertype: ['myproject:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
           hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
@@ -47,12 +47,20 @@ definitions:
             hipposysedit:path: myproject:link
             hipposysedit:primary: false
             hipposysedit:type: hippo:mirror
+          /formio:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: myproject:formio
+            hipposysedit:primary: false
+            hipposysedit:type: formiopicker:formio
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
           jcr:primaryType: myproject:bannerdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: d13d3bb0-35b7-4f1e-99c6-33ed8459eef9
+          jcr:uuid: c5758d23-2cd7-4637-9a0f-d3356f211a6b
           hippo:related___pathreference: []
           hippostd:holder: holder
           hippostd:state: draft
@@ -75,6 +83,9 @@ definitions:
           /myproject:link:
             jcr:primaryType: hippo:mirror
             hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+          /myproject:formio:
+            jcr:primaryType: formiopicker:formio
+            formiopicker:formiopaths: ''
       /editor:templates:
         jcr:primaryType: editor:templateset
         /_default_:
@@ -123,6 +134,15 @@ definitions:
           /link:
             jcr:primaryType: frontend:plugin
             field: link
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+          /formio:
+            jcr:primaryType: frontend:plugin
+            caption: formio
+            field: formio
+            hint: ''
             plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
             wicket.id: ${cluster.id}.right.item
             /cluster.options:
